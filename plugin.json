@@ -1,0 +1,14 @@
+{
+    "id": "candlestick-chart",
+    "version": "0.0.1",
+    "meta": {
+        "label": "Candlestick chart",
+        "description": "Use candlestick charts to visualize Trading data with candlesticks.",
+        "author": "V3",
+        "icon": "icon-bar-chart",
+        "licenseInfo": "Apache Software License",
+        "url": "https://github.com/vogt31337/dss-plugin-candlestick-chart",
+        "tags": ["Visualization"],
+        "supportLevel": "NOT_SUPPORTED"
+    }
+}

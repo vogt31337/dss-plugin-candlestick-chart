@@ -1,0 +1,79 @@
+{
+    "meta": {
+        "label": "Candlestick chart",
+        "description": "",
+        "icon": "icon-bar-chart"
+    },
+
+    "baseType": "STANDARD",
+    "hasBackend": "false",
+
+    "chart" : {
+        "datasetParamName": "dataset",
+        "leftBarLabel": "Chart parameters",
+        "leftBarParams": [
+            {
+                "name": "max_displayed_values",
+                "type": "INT",
+                "label": "Max displayed categories",
+                "description": "",
+                "mandatory": true,
+                "minI":1,
+                "maxI":100,
+                "defaultValue": 20
+            },
+            {
+                "name": "group_others",
+                "type": "BOOLEAN",
+                "label": "'Others'",
+                "description": "Group extra values in a 'Others' category",
+                "defaultValue":true
+            }
+        ],
+        "topBar": "STD_FORM",
+        "topBarParams": [
+            {
+                "name": "open",
+                "type": "DATASET_COLUMN",
+                "datasetParamName": "dataset",
+                "label": "Open values (Y)",
+                "description": "Open values for the candles",
+                "mandatory": true
+            },
+            {
+                "name": "close",
+                "type": "DATASET_COLUMN",
+                "datasetParamName": "dataset",
+                "label": "Close values (Y)",
+                "description": "Close values for the candles",
+                "mandatory": true
+            },
+            {
+                "name": "high",
+                "type": "DATASET_COLUMN",
+                "datasetParamName": "dataset",
+                "label": "High values (Y)",
+                "description": "High values for the candles",
+                "mandatory": true
+            },
+            {
+                "name": "low",
+                "type": "DATASET_COLUMN",
+                "datasetParamName": "dataset",
+                "label": "Low values (Y)",
+                "description": "Low values for the candles",
+                "mandatory": true
+            },
+            {
+                "name": "timestamp",
+                "type": "DATASET_COLUMN",
+                "datasetParamName": "dataset",
+                "label": "By (X)",
+                "description": "Timestamp for the data to be plotted",
+                "mandatory": true
+            }
+        ],
+        "canFilter": true,
+        "canFacet": false
+    }
+}
